@@ -14,14 +14,17 @@
 
 // alert( arr ); // 5,3,8,1 (not modified)
 
-function filterRange(arr, numFrom, numTo) {
+function filterRange1(arr, numFrom, numTo) {
 
     const filteredArray = arr.filter( (x) => {
       if( x >= numFrom && x <= numTo){
         return x;
       }
     })
-    
+
     return filteredArray;
 }
+function filterRange2(arr, numFrom, numTo) {
+    return arr.filter(item => (item >= numFrom && item <= numTo))
+  }
  
