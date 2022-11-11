@@ -17,21 +17,20 @@
 // // ...
 // All element orders should have an equal probability. For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, with equal probability of each case.
 
-let arr = [1, 2, 3];
+let arr = [1, 2, 3, 4, 5];
 
-function shuffle(arr){
-    for (let i = arr.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
+function shuffle(arr) {
+    let randomArr = []
+    while (randomArr.lenght != arr.lenght) {
+        do {
+        let randNum = Math.getRandomInt(arr.lenght - 1)
+        if (randomArr.includes(randNum))
+        
+        } while (!randomArr.includes(randNum))
+        
     }
 }
-console.log(arr)
-shuffle(arr);
 
-console.log(arr)
 shuffle(arr);
-
-console.log(arr)
 shuffle(arr);
-
-console.log(arr)
+shuffle(arr);
